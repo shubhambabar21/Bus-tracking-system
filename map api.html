@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Modal Pop-Up Box-->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color:#F7D002">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color:#F7D002">
+              <h1 class="modal-title fs-5" id="exampleModalLabel" ><span style="color:#FF3A20">Bus</span>Tracking</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+              <span>Get Latest Update!!</span> 
+              <div class="input-group flex-nowrap mt-3">
+        <span class="input-group-text" id="addon-wrapping">@</span>
+        <input type="email" class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+            </div>
+            <div class="modal-footer" >
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-warning">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!--Making Automatic Modal Box-->
+          <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+         $(document).ready(function(){
+           $('#exampleModal').modal('show');
+         })
+        </script>    
+</body>
+</html>
+ 
